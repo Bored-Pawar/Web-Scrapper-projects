@@ -33,7 +33,7 @@ def fetch_page(driver, url, wait_time = 10): # driver get the browser we created
     # this function tells the driver to wait until the said condition is satisfied
     try:
         WebDriverWait(driver, wait_time).until(
-            expected_conditions.presence_of_element_located((By.TAG_NAME, "body"))
+            expected_conditions.presence_of_element_located((By.TAG_NAME, "body")) # waits for the Html body to appear
             # in the above line there are not double paranthesis the pre expected_conditions.presence_of _element_located takes one agrgument
             # which is of type tuple (By.TAG_NAME, "body") is a tuple
         )
